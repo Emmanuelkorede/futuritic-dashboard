@@ -5,133 +5,156 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Futuristic Glass Dashboard</title>
 
-  <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-    <main>
-        <div class="all-container">
 
-            <div class="icon-containers">
-                <button class="icon-button icon-logo">
-                    FD
-                </button>
+  <div class="float-shape" aria-hidden="true"></div>
 
-                <button class="icon-button">
-                    <i class="fa-solid fa-house"></i>
-                </button>
+  <div class="app" role="application" aria-label="Futuristic dashboard">
+    <aside class="sidebar" id="sidebar" aria-hidden="false">
+      <div class="brand">FD</div>
 
-                <button class="icon-button">
-                    <i class="fa-solid fa-chart-line"></i>
-                </button>
+      <nav class="nav" aria-label="Main">
+        <button title="Home" aria-label="Home">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 11.5 L12 4 L21 11.5 V20 A1 1 0 0 1 20 21 H4 A1 1 0 0 1 3 20 Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button title="Analytics" aria-label="Analytics">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 3v18M18 3v12M12 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+        <button title="Music" aria-label="Music">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 0V7l9-2v6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button title="Settings" aria-label="Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 15.5A3.5 3.5 0 1 0 12 8.5a3.5 3.5 0 0 0 0 7zM19.4 15a7 7 0 0 0 0-6M4.6 15a7 7 0 0 1 0-6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+        </button>
+      </nav>
 
-                <button class="icon-button">
-                    <i class="fa-solid fa-music"></i>
-                </button>
+      <div style="flex:1"></div>
 
-                <button class="icon-button">
-                    <i class="fa-solid fa-gear"></i>
-                </button>
-            </div>
+      <button class="toggle-sidebar" id="collapseBtn" title="Toggle sidebar">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M8 6l8 6-8 6V6z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:13px">Hide</span>
+      </button>
+    </aside>
 
-            <div class="dashboard-containers">
-                <div class="display-card">
-
-                    <div class="top-card">
-                        <div class="top-card-display">
-                            <div class="top-card-logo">EM</div>
-                            <div class="top-card-text">
-                                <p>Welcome back,</p>
-                                <h1>Emmanuel — Futuristic Dashboard</h1>
-                            </div>
-                        </div>
-
-                        <div class="top-card-buttons">
-                            <button class="top-card-buttons-controls">
-                                Dark • Neon
-                            </button>
-                            <button class="top-card-buttons-controls">
-                                Accent
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="display-card">
-
-                    <div class="account-card">
-                        <p>Active Users</p>
-
-                        <div class="account-value">
-                            <span>10,235</span>
-                            <span>users</span>
-                        </div>
-
-                        <div class="trends">
-                            <div class="trend-text">sparking • live</div> 
-                            <div class="trend-icon"><i class="fa-solid fa-users"></i></div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="account-card">
-                        <p>Revenue (30d)</p>
-
-                        <div class="account-value">
-                            <span>24,750</span>
-                            <span>USD</span>
-                        </div>
-
-                        <div class="trends">
-                            <div class="trend-text">trend • +12%</div> 
-                            <div class="trend-icon"><i class="fa-solid fa-chart-column"></i></div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="display-card">
-                    <div class="card-1">
-                        <p>Overview</p>
-                        <div class="overview-update">
-                            <span>Real-time analytics</span>
-                            <span>Updated: just now</span>
-                        </div>
-
-                        <div class="overview-cards">
-                            <div>Interactive chart placeholder</div>
-
-                            <div>
-                                <h3>Conversion</h3>
-                                <h4>3.8%</h4>
-                                <p>vs last week  +0.6%</p>
-                            </div>
-
-                            <div>
-                                <h3>Bounce</h3>
-                                <h4>27%</h4>
-                                <p>avg session</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-2">
-                        <p>Server Status</p>
-                        <div class="overview-update">
-                            <span>All systems operational</span>
-                            <span>99.99%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main class="main">
+      <header class="app-header">
+        <div class="welcome" style="position:relative; z-index:1;">
+          <div class="profile" aria-hidden="true">EM</div>
+          <div class="title">
+            <div class="small">Welcome back,</div>
+            <h1>Emmanuel — Futuristic Dashboard</h1>
+          </div>
         </div>
+
+        <div style="display:flex; gap:12px; align-items:center;">
+          <div class="muted">Dark • Neon</div>
+          <button class="toggle-sidebar" id="themeBtn" title="Switch accent">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3v1M12 20v1M4.2 4.2l.7.7M19.1 19.1l.7.7M1 12h1M22 12h1M4.2 19.8l.7-.7M19.1 4.9l.7-.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <span style="font-size:13px">Accent</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="grid" aria-live="polite">
+        <article class="card stat" role="region" aria-label="Active users">
+          <div class="meta">
+            <div class="label">Active Users</div>
+            <div class="value"><span class="stat-number" data-target="9874">0</span><span class="muted">users</span></div>
+            <div class="chart">sparkline • live</div>
+          </div>
+          <div class="icon accent" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </article>
+
+        <article class="card stat" role="region" aria-label="Revenue">
+          <div class="meta">
+            <div class="label">Revenue (30d)</div>
+            <div class="value"><span class="stat-number" data-target="24750">0</span><span class="muted">USD</span></div>
+            <div class="chart">trend • +12%</div>
+          </div>
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M6 6v12M18 6v12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+        </article>
+
+        <article class="card wide" role="region" aria-label="Overview">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
+            <div>
+              <div class="label">Overview</div>
+              <div style="font-weight:700; font-size:18px; margin-top:6px;">Real-time analytics</div>
+            </div>
+            <div class="muted">Updated: <strong class="accent">just now</strong></div>
+          </div>
+
+          <div style="display:flex; gap:12px; margin-top:14px; align-items:flex-start;">
+            <div style="flex:1">
+              <div class="chart" style="height:140px;">Interactive chart placeholder</div>
+            </div>
+
+            <div style="width:220px;">
+              <div class="mini-grid">
+                <div class="card" style="padding:12px;">
+                  <div class="label">Conversion</div>
+                  <div style="font-weight:700; font-size:20px; margin-top:6px;"><span class="accent">3.8%</span></div>
+                  <div class="muted" style="margin-top:8px;">vs last week <span class="accent">+0.6%</span></div>
+                </div>
+
+                <div class="card" style="padding:12px;">
+                  <div class="label">Bounce</div>
+                  <div style="font-weight:700; font-size:20px; margin-top:6px;"><span class="accent">27%</span></div>
+                  <div class="muted" style="margin-top:8px;">avg session</div>
+                </div>
+              </div>
+
+              <div style="margin-top:12px;" class="muted">Top pages</div>
+              <ul style="margin:8px 0 0 0; padding:0; list-style:none;">
+                <li class="muted" style="padding:6px 0;">/home <span style="float:right; color:var(--muted)">4.2k</span></li>
+                <li class="muted" style="padding:6px 0;">/product <span style="float:right; color:var(--muted)">2.9k</span></li>
+                <li class="muted" style="padding:6px 0;">/checkout <span style="float:right; color:var(--muted)">921</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="region" aria-label="Server status">
+          <div class="label">Server Status</div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px;">
+            <div style="font-weight:700">All systems operational</div>
+            <div class="muted">99.99%</div>
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:8px;">
+            <div class="muted" style="flex:1">Latency</div>
+            <div style="font-weight:700">42ms</div>
+          </div>
+        </article>
+
+        <article class="card" role="region" aria-label="Now playing">
+          <div class="label">Now Playing</div>
+          <div style="display:flex; gap:12px; align-items:center; margin-top:8px;">
+            <div style="width:48px; height:48px; border-radius:10px; background:linear-gradient(180deg,var(--accent), var(--accent-2)); display:grid; place-items:center; font-weight:700;">♪</div>
+            <div>
+              <div style="font-weight:700">Neon Drift</div>
+              <div class="muted" style="font-size:13px; margin-top:6px;">Artist • Album</div>
+            </div>
+          </div>
+
+          <div class="chart" style="margin-top:12px; height:54px;">player controls</div>
+        </article>
+      </section>
+
+      <div style="height:24px"></div>
+      <div class="muted" style="font-size:13px;">Job Emmanuel A 16 yr old developer</div>
+
     </main>
+  </div>
+ <script src="script.js"></script>
+ 
 </body>
 </html>
