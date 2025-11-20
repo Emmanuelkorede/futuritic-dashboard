@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(124,247,255,0.04), transparent 6%),
+                  radial-gradient(900px 400px at 90% 85%, rgba(138,108,255,0.025), transparent 6%),
+                  linear-gradient(180deg, #071428, #0b1220);
+    color: #e8f6ff;
+    padding: 20px;
+}
+
+.all-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icon-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid  rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    width: 85px;
+    border-radius: 14px;
+}
+
+.icon-logo {
+    font-size: 1.2rem;
+    background: linear-gradient(135deg,#7cf7ff, #8a6cff);
+    
+}
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+    border-radius: 14px;
+    height: 55px;
+    width: 50px;
+    border: none;
+
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+    font-size: 20px;
+    cursor: pointer;
+    color: #e8f6ff;
+
+    transition: 0.3s ease;
+}
+
+.icon-button:hover {
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 6px 18px rgba(124,247,255,0.06), 0 0 18px rgba(138,108,255,0.05);
+}
+
+.top-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.top-card-display {
+    display: flex;
+    gap: 15px;
+}
+
+.top-card-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  rgba(255,255,255,0.12);
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.top-card-text h1 {
+    font-size: 1.4rem;
+}
+
+.top-card-text p {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+}
+
+
+.dashboard-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.display-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  rgba(255,255,255,0.12);
+    padding: 12px;
+}
+
+.trends {
+    display: flex;
+    gap: 20px;
+}
+
+.trend-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+
+}
+
+.card-1 , .card-2  {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  rgba(255,255,255,0.12);
+    padding: 12px;
+}
+
+.overview-cards {
+    display: flex;
+    gap: 15px;
+}
